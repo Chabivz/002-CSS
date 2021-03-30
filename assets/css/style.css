@@ -3,3 +3,35 @@ html {
     background: linear-gradient(90deg, rgba(0,4,36,1) 50%, rgba(53,37,117,1) 100%, rgba(0,212,255,1) 100%);
     color: wheat;
 }
+
+
+/* Header CSS */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Tahoma, sans-serif;
+}
+.header h1 {
+    font-size: 48px;
+    padding: 20px;
+}
+
+.navigator {
+    flex-direction: column;
+}
+
+.navigator  ul {  
+    list-style-type: none;
+   
+}
+
+.navigator ul li {
+    
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/* Main CSS */
