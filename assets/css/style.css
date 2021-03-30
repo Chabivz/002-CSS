@@ -1,0 +1,5 @@
+html {
+    background: rgb(0,4,36);
+    background: linear-gradient(90deg, rgba(0,4,36,1) 50%, rgba(53,37,117,1) 100%, rgba(0,212,255,1) 100%);
+    color: wheat;
+}
