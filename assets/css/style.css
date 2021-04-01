@@ -35,3 +35,80 @@ html {
 
 
 /* Main CSS */
+
+
+
+section {
+    display: flex;
+    border-style: dotted;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Justify-Flex END && START */
+
+#work {
+    /* justify-content: flex-start; */
+}
+
+#aboutMe {
+    /* justify-content: flex-end; */
+    
+}
+
+#contactMe {
+    /* justify-content: flex-start; */
+}
+
+#resume {
+    /* justify-content: flex-end; */
+}
+
+/* Float Left || DIV container*/
+.float-left {
+    flex: 1;
+    width: 33%;
+    height: 100%;
+    padding: 50px 40px;
+    background-color: aqua;
+    font-size: 28px;
+    color: black;
+    position: relative;
+
+    /* top: 50%;
+    left: 50%; */
+}
+/* p Container */
+.p-left {
+    flex: 3;
+    width: 66%;
+    height: 100%;
+    background-color: #yellow;
+    font-size: 20px;
+    padding: 50px 40px;
+}
+
+/* float right || DIV Container*/
+.float-right {
+    flex: 1;
+    order: 2;
+    width: 33%;
+    height: 100%;
+    padding: 50px 40px;
+    background-color: aqua;
+    font-size: 28px;
+    color: black;
+    position: relative;
+
+}
+/* P Container */
+.p-right {
+    flex: 3;
+    order: 1;
+    width: 66%;
+    height: 150px;
+    background-color: #yellow;
+    font-size: 20px;
+    padding: 50px 40px;
+}
+
