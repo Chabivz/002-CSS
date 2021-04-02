@@ -1,36 +1,87 @@
-html {
-    background: rgb(0,4,36);
-    background: linear-gradient(90deg, rgba(0,4,36,1) 50%, rgba(53,37,117,1) 100%, rgba(0,212,255,1) 100%);
-    color: wheat;
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+    src: url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("ttf"),
+    url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("opentype"),
+    url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("ttf");
+
 }
 
+html {
+    background: #9D9AC2;
+    /* background: linear-gradient(90deg, rgba(0,4,36,1) 50%, rgba(53,37,117,1) 100%, rgba(0,212,255,1) 100%); */
+    color: EEE9F3;
+    font-family: Libre Baskerville;
+}
 
+/* 
+    Color
+   https://paletton.com/#uid=5440u0k7LBY1mWf45NtcjtIhNoh
+    color: EBEBF3; FONT
+    color: C8C6DE; SECOND LAYER
+    color: 9D9AC2; BASE
+    color: 736EA5; DARK BASE
+    color: 4C4687; DARKER BASE
+    color: A994BE; BASE
+    color: EEE9F3; FONT
+    color: CFC2DC; LIGHTER
+    color: E867A0; SECOND BASE
+    color: 614083; DARKER LAYER
+
+*/
 /* Header CSS */
 
 .header {
+    border-style: groove;
     display: flex;
     flex-wrap: wrap;
     font-family: Tahoma, sans-serif;
+    /* height: 72px; */
+    line-height: 1.7;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    
 }
 .header h1 {
-    font-size: 48px;
-    padding: 20px;
+    border-style: dotted;
+    font-family: cursive;
+    font-size: 30px; 
 }
 
 .navigator {
-    flex-direction: column;
+    display: flex;
+    /* flex-direction: column; */
+    font-size: 20px;
+    /* text-align: center; */
+    height: 100%;
+    color: blanchedalmond;
+}
+
+nav a {
+    text-decoration: none !important;
+    color: blanchedalmond;
 }
 
 .navigator  ul {  
     list-style-type: none;
+    display: inline-block;
    
 }
 
 .navigator ul li {
-    
-    display: inline-block;
-    padding: 20px;
-    font-size: 20px;
+
+    display: table-cell;
+    padding: 0px 15px 0px 15px;
+    border-style: dotted;
+
+}
+
+/* Hovers */
+
+.navigator ul li a:hover {
+    color: white;
+
 }
 
 
@@ -45,25 +96,6 @@ section {
     flex-wrap: wrap;
 }
 
-/* Justify-Flex END && START */
-
-#work {
-    /* justify-content: flex-start; */
-}
-
-#aboutMe {
-    /* justify-content: flex-end; */
-    
-}
-
-#contactMe {
-    /* justify-content: flex-start; */
-}
-
-#resume {
-    /* justify-content: flex-end; */
-}
-
 /* Float Left || DIV container*/
 .float-left {
     flex: 1;
@@ -74,9 +106,8 @@ section {
     font-size: 28px;
     color: black;
     position: relative;
+    text-align: center;
 
-    /* top: 50%;
-    left: 50%; */
 }
 /* p Container */
 .p-left {
@@ -85,11 +116,12 @@ section {
     height: 100%;
     background-color: #yellow;
     font-size: 20px;
-    padding: 50px 40px;
+    padding: 100px 40px;
 }
 
 /* float right || DIV Container*/
 .float-right {
+    text-align: center;
     flex: 1;
     order: 2;
     width: 33%;
@@ -109,6 +141,23 @@ section {
     height: 150px;
     background-color: #yellow;
     font-size: 20px;
-    padding: 50px 40px;
+    padding: 100px 40px;
 }
+/* 
+#contactme, #resume {
+    flex: 2;
+    width: 20%;
+} */
 
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 768px) {
+    /* HEADER */
+
+    /* MAIN */
+    .article { 
+        display: flex;
+        flex-direction: column;
+    }
+
+}
