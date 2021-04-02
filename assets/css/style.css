@@ -1,3 +1,5 @@
+/* Adding font */
+
 @font-face {
     font-family: "Libre Baskerville";
     src: url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
@@ -5,13 +7,18 @@
     url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("opentype"),
     url("https://chabivz.github.io/Portfolio//assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("ttf");
 
+    font-family: "Libre Baskerville";
+    src: url("/assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+    src: url("/assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("ttf"),
+    url("/assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("opentype"),
+    url("/assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("ttf");
 }
 
 html {
     background: #9D9AC2;
     /* background: linear-gradient(90deg, rgba(0,4,36,1) 50%, rgba(53,37,117,1) 100%, rgba(0,212,255,1) 100%); */
     color: EEE9F3;
-    font-family: Libre Baskerville;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* 
@@ -35,7 +42,7 @@ html {
     border-style: groove;
     display: flex;
     flex-wrap: wrap;
-    font-family: Tahoma, sans-serif;
+    font-family: 'Libre Baskerville', 'Courier New', Courier, monospace;
     /* height: 72px; */
     line-height: 1.7;
     justify-content: center;
@@ -45,8 +52,8 @@ html {
 }
 .header h1 {
     border-style: dotted;
-    font-family: cursive;
     font-size: 30px; 
+    letter-spacing: 3px;
 }
 
 .navigator {
@@ -55,12 +62,12 @@ html {
     font-size: 20px;
     /* text-align: center; */
     height: 100%;
-    color: blanchedalmond;
+    color: #EBEBF3;
 }
 
 nav a {
     text-decoration: none !important;
-    color: blanchedalmond;
+    color: #EBEBF3;
 }
 
 .navigator  ul {  
@@ -74,14 +81,18 @@ nav a {
     display: table-cell;
     padding: 0px 15px 0px 15px;
     border-style: dotted;
+    letter-spacing: 2px;
 
 }
 
 /* Hovers */
 
 .navigator ul li a:hover {
-    color: white;
+    color: #614083;
+}
 
+.header h1:hover {
+    color: #614083;
 }
 
 
