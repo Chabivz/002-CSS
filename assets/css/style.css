@@ -15,35 +15,20 @@
 }
 
 html {
-    background: #9D9AC2;
+    background: #FFF;
     /* background: linear-gradient(90deg, rgba(0,4,36,1) 50%, rgba(53,37,117,1) 100%, rgba(0,212,255,1) 100%); */
-    color: EEE9F3;
+    color: #000;
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* 
-    Color
-   https://paletton.com/#uid=5440u0k7LBY1mWf45NtcjtIhNoh
-    color: EBEBF3; FONT
-    color: C8C6DE; SECOND LAYER
-    color: 9D9AC2; BASE
-    color: 736EA5; DARK BASE
-    color: 4C4687; DARKER BASE
-    color: A994BE; BASE
-    color: EEE9F3; FONT
-    color: CFC2DC; LIGHTER
-    color: E867A0; SECOND BASE
-    color: 614083; DARKER LAYER
-
-*/
-/* Header CSS */
 
 .header {
-    border-style: groove;
+    align-items: center;
+    background-color: black;
+    opacity: 50%;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Libre Baskerville', 'Courier New', Courier, monospace;
-    /* height: 72px; */
     line-height: 1.7;
     justify-content: center;
     width: 100%;
@@ -51,9 +36,12 @@ html {
     
 }
 .header h1 {
-    border-style: dotted;
     font-size: 30px; 
     letter-spacing: 3px;
+}
+.header h1 a {
+    text-decoration: none !important;
+    color: #EBEBF3;
 }
 
 .navigator {
@@ -62,7 +50,7 @@ html {
     font-size: 20px;
     /* text-align: center; */
     height: 100%;
-    color: #EBEBF3;
+
 }
 
 nav a {
@@ -79,7 +67,7 @@ nav a {
 .navigator ul li {
 
     display: table-cell;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 20px 0px 20px;
     border-style: dotted;
     letter-spacing: 2px;
 
@@ -91,84 +79,90 @@ nav a {
     color: #614083;
 }
 
-.header h1:hover {
+.header h1 a:hover {
     color: #614083;
 }
 
 
 /* Main CSS */
 
-
+article {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 section {
     display: flex;
-    border-style: dotted;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: right;
+    width: 100%;
+    border-style: dotted;
 }
-
-/* Float Left || DIV container*/
-.float-left {
+section .h1 {
     flex: 1;
-    width: 33%;
+    font-size: 35px;
+    width: 30%;
     height: 100%;
-    padding: 50px 40px;
-    background-color: aqua;
-    font-size: 28px;
-    color: black;
-    position: relative;
     text-align: center;
-
-}
-/* p Container */
-.p-left {
-    flex: 3;
-    width: 66%;
-    height: 100%;
-    background-color: #yellow;
-    font-size: 20px;
-    padding: 100px 40px;
+    border-right: #000;
+    border-style: dashed;
 }
 
-/* float right || DIV Container*/
-.float-right {
-    text-align: center;
-    flex: 1;
-    order: 2;
-    width: 33%;
-    height: 100%;
-    padding: 50px 40px;
-    background-color: aqua;
-    font-size: 28px;
-    color: black;
-    position: relative;
 
-}
-/* P Container */
-.p-right {
-    flex: 3;
-    order: 1;
-    width: 66%;
-    height: 150px;
-    background-color: #yellow;
-    font-size: 20px;
-    padding: 100px 40px;
-}
-/* 
-#contactme, #resume {
+
+section .item {
     flex: 2;
-    width: 20%;
-} */
+    height: 100%;
+    width: 65%;
+    text-align:center;
+    flex-direction: column;
+    object-fit: fill;
+}
 
-/* MEDIA SCREEN */
+#workSection {
+    display: table;
+    margin: 0 auto;
 
-@media screen and (max-width: 768px) {
-    /* HEADER */
+}
 
-    /* MAIN */
-    .article { 
-        display: flex;
-        flex-direction: column;
-    }
+#workSection ul {
+    list-style-type: none;
+}
 
+#workSection ul li {
+    display: inline;
+}
+
+
+
+/* PHOTOS */
+#aboutMePhoto img {
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    right: 0;
+}
+
+#work img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+#contactMe img {
+    height: 100px;
+    width: 100px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #736EA5 ;
+    height: 100px;
+    margin: auto;
 }
