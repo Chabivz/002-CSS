@@ -109,44 +109,22 @@ nav a {
 
 /* Main CSS */
 
-.main   {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* justify-content: ; */
-}
-
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* justify-content: ; */
-}
-
-article {   
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
     width: 100%;
 }
-section .h1 {
-    flex: 1;
-    font-size: 35px;
+.section .h1 {
+    font-size: 30px;
     width: 30%;
     height: 100%;
     text-align: center;
+    border-right: 5px solid #000;
+    line-height: 600%;
 }
 
-
-
 section .item {
-    flex: 2;
+    
     height: 100%;
     width: 65%;
     text-align:center;
@@ -166,6 +144,10 @@ section .item {
 
 #workSection ul li {
     display: inline;
+}
+
+#contactMe .item ul {
+    list-style-type: none;
 }
 
 
@@ -201,25 +183,44 @@ footer {
     margin: auto;
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header {
         flex-direction: column;
     }
     .navigator ul li    {
-        /* display: flex; */
-        /* flex-direction: column; */
+        width: 100%;
+        flex-direction: column;
        
     }
     .section {
         display: flex;
         flex-direction: column;
+        
     }
     .section .h1
     {   
-        width: 100px;
+        /* padding: 30px 0px 30px 0px; */
+        width: 100%;
+        border-right: none;
+        line-height: 200%;
+
+
     }
     .section .item {
-        width: 100px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+  
+    .section #workSection ul  {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .p-left {
+        border-style: 5px solid black;
+        padding: 10px 25px;
     }
 
 }
